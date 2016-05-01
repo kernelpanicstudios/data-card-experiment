@@ -20,7 +20,11 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new AureliaWebpackPlugin(),
+    new AureliaWebpackPlugin({
+      contextMap: {
+        "pouchdb": "node_modules/pouchdb/dist/pouchdb.js"
+      }
+    }),
     new ProvidePlugin({
       Promise: 'bluebird',
       $: 'jquery',
