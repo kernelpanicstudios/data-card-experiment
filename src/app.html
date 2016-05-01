@@ -1,5 +1,40 @@
 <template>
-  <div class="page-host">
-    <router-view></router-view>
+  <div class="top-bar" ref="navigation">
+    <div class="top-bar-title">
+      <ul class="menu">
+        <li>
+          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="dark" data-toggle><i class="fa fa-bars"></i>&nbsp;<strong>${title}</strong></button>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div id="responsive-menu">
+      <div class="top-bar-left hide-for-small-only">
+        <ul class="menu">
+          <li class="menu-text">${title}</li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="vertical medium-horizontal menu">
+          <li><a route-href="route: list">List All Cards</a></li>
+          <li>
+            <form class="search-form" submit.delegate="search()">
+              <div class="input-group">
+                <input class="input-group-field" type="search">
+                <div class="input-group-button">
+                  <button class="button" type="submit">Search</button>
+                </div>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns small-12">
+      <router-view></router-view>
+    </div>
   </div>
 </template>

@@ -1,4 +1,15 @@
+import $ from 'jquery';
+import 'foundation-sites';
+
 export class App {
+  constructor() {
+    this.title = 'Mission Data Card Tool';
+  }
+
+  attached() {
+    $(this.navigation).foundation();
+  }
+
   configureRouter(config, router) {
     config.title = 'Mission Data Card';
     config.map([
@@ -7,5 +18,9 @@ export class App {
     ]);
 
     this.router = router;
+  }
+
+  search() {
+    console.log(this.searchQuery);
   }
 }

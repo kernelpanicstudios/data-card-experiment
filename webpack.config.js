@@ -22,7 +22,9 @@ module.exports = {
   plugins: [
     new AureliaWebpackPlugin(),
     new ProvidePlugin({
-      Promise: 'bluebird'
+      Promise: 'bluebird',
+      $: 'jquery',
+      jQuery: 'jquery'
     }),
     new BrowserSyncPlugin(
       {

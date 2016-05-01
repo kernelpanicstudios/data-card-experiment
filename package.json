@@ -4,7 +4,7 @@
   "description": "An experiment creating a Mission Data Card for DCS flights using Aurelia and Foundation.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.js --hot --inline --progress --devtool eval",
+    "dev": "webpack-dev-server --config webpack.config.js --hot --inline --progress --devtool source-map",
     "build": "webpack --config webpack.config.js --progress --profile",
     "prod": "webpack -p --config webpack.prod.config.js --progress --devtool source-map",
     "test": "karma start",
@@ -42,7 +42,8 @@
     "bluebird": "^3.3.4",
     "font-awesome": "^4.5.0",
     "foundation-sites": "^6.2.1",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^2.2.3"
   },
   "devDependencies": {
     "aurelia-tools": "^0.1.18",
