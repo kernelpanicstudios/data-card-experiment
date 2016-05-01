@@ -1,0 +1,8 @@
+<template bindable="label, size, field">
+  <div class="medium-${size} columns card-cell">
+    <label>
+      <span class="card-label" if.bind="label">${label}</span>
+      <input type="text" value.bind="field">
+    </label>
+  </div>
+</template>

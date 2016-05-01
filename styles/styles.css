@@ -5,3 +5,37 @@
 .search-form .input-group {
     margin-bottom: 0;
 }
+
+.card-header {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.card-label {
+    padding-left: 0.25rem;
+}
+
+.card-cell {
+    padding: 0;
+    border: solid thin black;
+}
+
+.card-cell input {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.card-cell-header {
+    padding: 0;
+    border: solid thin black;
+    text-align: center;
+}
+
+.card-cell-header label {
+    font-weight: bold;
+}
