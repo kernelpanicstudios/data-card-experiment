@@ -1,10 +1,10 @@
 # Data Card Experiment
 
-Just an experiment to create a Mission Data Card in HTML using Foundation
+Just an experiment to create a Mission Data Card in HTML using Aurelia & Foundation
 
 # License
 
-New BSD.  See the [LICENSE](LICENSE).
+New BSD 3-Clause.  See the [LICENSE](LICENSE).
 
 # Instructions
 
